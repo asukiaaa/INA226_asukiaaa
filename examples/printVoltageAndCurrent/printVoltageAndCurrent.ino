@@ -1,7 +1,6 @@
 #include <INA226_asukiaaa.h>
-#define INA226_ADDR B1000000
 
-INA226_asukiaaa voltCurrMeter(INA226_ADDR, INA226_asukiaaa::calcCalibByResisterMilliOhm(2));
+INA226_asukiaaa voltCurrMeter(INA226_ASUKIAAA_ADDR_A0_GND_A1_GND, INA226_asukiaaa::calcCalibByResisterMilliOhm(2));
 
 void setup() {
   Serial.begin(115200);
