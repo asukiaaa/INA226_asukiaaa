@@ -1,8 +1,8 @@
 #include <INA226_asukiaaa.h>
 
-const uint16_t calib = INA226_asukiaaa::calcCalibByResisterMilliOhm(2); // Max 5120 milli ohm
-// const uint16_t calib = INA226_asukiaaa::calcCalibByResisterMicroOhm(2000);
-INA226_asukiaaa voltCurrMeter(INA226_ASUKIAAA_ADDR_A0_GND_A1_GND, calib);
+const uint16_t ina226calib = INA226_asukiaaa::calcCalibByResisterMilliOhm(2); // Max 5120 milli ohm
+// const uint16_t ina226calib = INA226_asukiaaa::calcCalibByResisterMicroOhm(2000);
+INA226_asukiaaa voltCurrMeter(INA226_ASUKIAAA_ADDR_A0_GND_A1_GND, ina226calib);
 
 void setup() {
   Serial.begin(115200);
