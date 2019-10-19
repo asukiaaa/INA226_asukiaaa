@@ -25,12 +25,9 @@
 class INA226_asukiaaa {
  public:
   INA226_asukiaaa(int address, uint16_t calib, uint16_t config = INA226_ASUKIAAA_DEFAULT_CONFIG);
-  // calib is used to calculate current value.
-  // define your calib by referencing shunt resister.
-  // calib = 5120 / R(mOhm)
-  // Ex: 0.002 Ohm -> 2 mOhm -> calib = 5120 / 2 = 2560
   void setWire(TwoWire* wire);
   static uint16_t calcCalibByResisterMilliOhm(uint16_t resisterMilliOhm); // MAX 5120 mOhm
+  static uint16_t calcCalibByResisterMicroOhm(uint32_t resisterMicroOhm);
 
   int begin();
 
