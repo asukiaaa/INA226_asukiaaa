@@ -6,6 +6,10 @@ INA226_asukiaaa voltCurrMeter(INA226_ASUKIAAA_ADDR_A0_GND_A1_GND, calib);
 
 void setup() {
   Serial.begin(115200);
+
+  // Wire2.begin(25, 26);
+  // voltCurrMeter.setWire(&Wire2);
+
   if (voltCurrMeter.begin() != 0) {
     Serial.println("Failed to begin INA226");
   }
