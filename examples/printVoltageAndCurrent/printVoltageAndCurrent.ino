@@ -12,7 +12,7 @@ void setup() {
 }
 
 void loop() {
-  int16_t ma, mv;
+  int16_t ma, mv, mw;
   if (voltCurrMeter.readMV(&mv) == 0) {
     Serial.println(String(mv) + "mV");
   } else {
@@ -22,6 +22,11 @@ void loop() {
     Serial.println(String(ma) + "mA");
   } else {
     Serial.println("Cannot read current.");
+  }
+  if (voltCurrMeter.readMW(&mw) == 0) {
+    Serial.println(String(mw) + "mW");
+  } else {
+    Serial.println("Cannot read watt.");
   }
   delay(1000);
 }
