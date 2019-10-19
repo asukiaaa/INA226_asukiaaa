@@ -21,4 +21,5 @@ void loop() {
   } else {
     Serial.println("Cannot read current.");
   }
+  delay(1000);
 }
