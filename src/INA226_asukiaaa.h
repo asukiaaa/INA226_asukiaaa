@@ -32,8 +32,11 @@ class INA226_asukiaaa {
   int begin();
 
   int readMV(int16_t* volt);
+  int readV(float* volt);
   int readMA(int16_t* current);
+  int readA(float* current);
   int readMW(int16_t* watt);
+  int readW(float* watt);
 
  private:
   int address;
