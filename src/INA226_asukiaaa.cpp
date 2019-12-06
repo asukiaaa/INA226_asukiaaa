@@ -52,7 +52,7 @@ int INA226_asukiaaa::readMV(int16_t* volt) {
 }
 
 int INA226_asukiaaa::readV(float* volt) {
-  uint16_t mv;
+  int16_t mv;
   int result = readMV(&mv);
   if (result != 0) return result;
   *volt = (float) mv / 1000;
@@ -64,7 +64,7 @@ int INA226_asukiaaa::readMA(int16_t* current) {
 }
 
 int INA226_asukiaaa::readA(float* current) {
-  uint16_t ma;
+  int16_t ma;
   int result = readMA(&ma);
   if (result != 0) return result;
   *current = (float) ma / 1000;
@@ -80,7 +80,7 @@ int INA226_asukiaaa::readMW(int16_t* watt) {
 }
 
 int INA226_asukiaaa::readW(float* watt) {
-  uint16_t mw;
+  int16_t mw;
   int result = readMW(&mw);
   if (result != 0) return result;
   *watt = (float) mw / 1000;
