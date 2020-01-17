@@ -1,6 +1,6 @@
 # INA226_asukiaaa
 
-A library to communicate with INA226 voltage and current metor.
+A library to communicate with INA226 voltage and current meter.
 
 # Usage
 See [example](./examples/printVoltageAndCurrent/printVoltageAndCurrent.ino) or [header file](./src/INA226_asukiaaa.h).
