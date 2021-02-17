@@ -24,12 +24,12 @@ void INA226_asukiaaa::setWire(TwoWire* wire) {
   this->wire = wire;
 }
 
-uint16_t INA226_asukiaaa::calcCalibByResisterMilliOhm(uint16_t resisterMilliOhm) {
-  return calcCalibByResisterMicroOhm((uint32_t) resisterMilliOhm * 1000);
+uint16_t INA226_asukiaaa::calcCalibByResistorMilliOhm(uint16_t resistorMilliOhm) {
+  return calcCalibByResistorMicroOhm((uint32_t) resistorMilliOhm * 1000);
 }
 
-uint16_t INA226_asukiaaa::calcCalibByResisterMicroOhm(uint32_t resisterMilliOhm) {
-  return (uint32_t) 5120 * 1000 / resisterMilliOhm;
+uint16_t INA226_asukiaaa::calcCalibByResistorMicroOhm(uint32_t resistorMilliOhm) {
+  return (uint32_t) 5120 * 1000 / resistorMilliOhm;
 }
 
 int INA226_asukiaaa::begin() {
