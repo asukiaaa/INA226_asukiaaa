@@ -25,6 +25,7 @@ MIT
 
 # References
 
+- [電流電圧測定チップINA226をArduinoでライブラリを通して使う方法](https://asukiaaa.blogspot.com/2019/10/ina226arduino.html)
 - [INA226 datasheet (PDF)](http://www.ti.com/lit/ds/symlink/ina226.pdf)
 - [電圧/電流計測　INA226をCCS Cで使う](http://denshi-kousaku.fan.coocan.jp/report030.html)
 - [INA226 I2Cディジタル電流・電圧・電力計モジュール](https://strawberry-linux.com/catalog/items?code=12031)
