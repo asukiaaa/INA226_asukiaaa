@@ -26,8 +26,8 @@ class INA226_asukiaaa {
  public:
   INA226_asukiaaa(int address, uint16_t calib, uint16_t config = INA226_ASUKIAAA_DEFAULT_CONFIG);
   void setWire(TwoWire* wire);
-  static uint16_t calcCalibByResisterMilliOhm(uint16_t resisterMilliOhm); // MAX 5120 mOhm
-  static uint16_t calcCalibByResisterMicroOhm(uint32_t resisterMicroOhm);
+  static uint16_t calcCalibByResistorMilliOhm(uint16_t resistorMilliOhm); // MAX 5120 mOhm
+  static uint16_t calcCalibByResistorMicroOhm(uint32_t resistorMicroOhm);
 
   int begin();
 

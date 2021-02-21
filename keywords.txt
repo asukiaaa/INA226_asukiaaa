@@ -13,8 +13,8 @@ INA226_asukiaaa	KEYWORD1
 #######################################
 
 setWire	KEYWORD2
-calcCalibByResisterMilliOhm	KEYWORD2
-calcCalibByResisterMicroOhm	KEYWORD2
+calcCalibByResistorMilliOhm	KEYWORD2
+calcCalibByResistorMicroOhm	KEYWORD2
 begin	KEYWORD2
 readMV	KEYWORD2
 readMA	KEYWORD2
