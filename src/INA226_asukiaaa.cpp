@@ -13,11 +13,12 @@
 #define INA226_ASUKIAAA_REGISTER_ALERTL 0x07
 #define INA226_ASUKIAAA_REGISTER_DIE_ID 0xff
 
-INA226_asukiaaa::INA226_asukiaaa(int address, uint16_t calib, uint16_t config) {
+INA226_asukiaaa::INA226_asukiaaa(int address, uint16_t calib, uint16_t config,
+                                 TwoWire* wire) {
   this->address = address;
   this->calib = calib;
   this->config = config;
-  wire = nullptr;
+  this->wire = wire;
 }
 
 void INA226_asukiaaa::setWire(TwoWire* wire) { this->wire = wire; }
