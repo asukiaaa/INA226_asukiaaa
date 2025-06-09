@@ -32,7 +32,7 @@ class INA226_asukiaaa {
   static uint16_t calcCalibByResistorMicroOhm(uint32_t resistorMicroOhm);
 
   int begin();
-
+  int writeConfig();
   int readMV(int16_t* volt);
   int readV(float* volt);
   int readMA(int16_t* current);

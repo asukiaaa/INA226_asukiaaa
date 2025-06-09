@@ -39,6 +39,10 @@ int INA226_asukiaaa::begin() {
     wire->begin();
     delay(10);
   }
+  return writeConfig();
+}
+
+int INA226_asukiaaa::writeConfig() {
   int result = write(INA226_ASUKIAAA_REGISTER_CONFIG, config);
   if (result != 0) return result;
   return write(INA226_ASUKIAAA_REGISTER_CALIB, calib);
